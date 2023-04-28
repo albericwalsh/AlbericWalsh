@@ -1,0 +1,11 @@
+/* Import de la font personnalisée */
+@font-face {
+    font-family: 'Ethereal-Thin';
+    src: url('Font/Ethereal-Thin.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Ethereal-Thin', sans-serif;
+}
