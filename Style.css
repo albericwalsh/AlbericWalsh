@@ -6,6 +6,23 @@
     font-style: normal;
 }
 
-body {
-    font-family: 'Ethereal-Thin', sans-serif;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#background {
+    background-image: url('res/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* S'assure que l'image reste en arrière-plan */
 }
