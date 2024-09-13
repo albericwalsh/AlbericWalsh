@@ -15,7 +15,7 @@ function handleScroll() {
     });
 
     menuButtons.forEach((btn, i) => {
-        if (i === index) {
+        if (i === index-1) {
             btn.classList.add('active');
         } else {
             btn.classList.remove('active');
