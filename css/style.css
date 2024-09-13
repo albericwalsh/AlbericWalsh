@@ -184,8 +184,9 @@ h4 {
 
 h5 {
     font-size: 3vh;
+    font-style: italic;
     font-weight: 100;
-    color: #dcd4d4;
+    color: #b6b2b2;
     text-align: start;
     margin: 0;
     padding: 0;
@@ -212,6 +213,7 @@ p {
 .img-illustration {
     height: 50vh;
     align-self: center;
+    justify-self: start;
 }
 
 .profile-pic {
