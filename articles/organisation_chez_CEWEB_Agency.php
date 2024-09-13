@@ -1,5 +1,3 @@
-<?php
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,29 +21,25 @@
 <div data-animated-onLoad class="gradient-night"></div>
 <div class="section-div">
     <img data-animated-onScroll data-animated-onLoad
-         src="https://lh3.googleusercontent.com/p/AF1QipM0vtZQnjgvWuUsnX6kjSPaYqmczRjsgVLqyCbm=s680-w680-h510"
+         src="https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
          class="hover-shadow img-illustration zoom-in" alt="illustrations">
     <div class="article-txt">
         <h1 data-animated-onScroll data-animated-onLoad class="slide-in-right">
-            CEWEB Agency
+            L'organisation de la CEWEB Agency
         </h1>
-        <h4 data-animated-onScroll data-animated-onLoad class="slide-in-left" style="justify-self: self-start">
-            CEWEB Agency est une entreprise spécialisée dans la création de sites internet et d'applications web,
-            s'adressant principalement aux PME, TPE ainsi qu'aux particuliers. Fondée il y a quelques années par mon
-            frère et son associé, l'agence a su développer une expertise reconnue en menant à bien de nombreux
-            projets sur mesure.
-        </h4>
-        <h4 data-animated-onScroll data-animated-onLoad class="slide-in-left" style="justify-self: self-start">
-            Au cours de mon stage, j'ai eu l'opportunité de les accompagner sur certains projets, ce qui m'a permis
-            de me familiariser avec la relation clientèle, la gestion de projet, ainsi que le développement web
-            appliqué à des situations concrètes. Cette expérience m'a offert une vision plus approfondie des
-            processus opérationnels et des défis liés à la réalisation de solutions numériques personnalisées.
-        </h4>
-        <h4 data-animated-onScroll data-animated-onLoad class="slide-in-left" style="justify-self: self-start">
-            J'ai eu l'opportunité de travailler tout au long de l'année sur mon projet, ce qui m'a permis d'observer
-            l'activité de l'entreprise dans sa globalité et sur une période prolongée. Cette expérience m'a offert
-            une vision complète du fonctionnement de l'entreprise au fil des saisons et des différents cycles
-            d'activité.
+        <h4 data-animated-onScroll data-animated-onLoad class="slide-in-left">
+            Vu les petits effectifs de l'entreprise, la CEWEB Agency est une entreprise à taille humaine. Cela signifie
+            que les associé gère à 100% leur parties. D'un côté, il y a Clément qui gère tout l'aspect technique et
+            developpement web, c'est dans son service que j'ai pu travailler et de l'autre il y a Eloi qui s'occupe de
+            toute la recherche clientelle et relation clientelle. même si c'était lui mon maitre de stage, je
+            travaillais en étroite colaboration avec clément car il était le plus apte à me fournir les éléments
+            manquant et à e former sur les differents besoins que j'avais.
+            Malgrés les secteurs d'activités bien distincts, les deux associés s'entraide beaucoup, surtout sur la
+            partie developpement web où il y a une charge de travaille beaucoup plus conséquente.
+            Pour gérer une telle entreprise, il faut être très organisé et savoir gérer son temps. C'est ce que j'ai
+            appris grace à eux. Ils ont différents outils pour gerer leur temps. j'ai donc apris a utiliser en premier
+            lieu Jira, on s'en est servit pour le gestion des tickets, j'avais une colonnes à moi où toutes mes missions
+            arrivaient et je les gérais dans la semaine. Ensuite il y avais le Qualif
         </h4>
     </div>
 </div>
