@@ -1,3 +1,6 @@
+// Initialization for ES Users
+
+
 const sections = document.querySelectorAll('section');
 const menuButtons = document.querySelectorAll('.menu-btn');
 
