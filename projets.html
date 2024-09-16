@@ -16,7 +16,262 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/animations.js"></script>
+    <script>// Initialization for ES Users
+    import {Ripple, Carousel, initMDB} from "mdb-ui-kit";
+
+    initMDB({Carousel, Ripple});
+    </script>
 </head>
 <body>
+<div data-animated-onLoad class="gradient-success"></div>
+<div class="back-btn">
+    <a href="index.html#apropos" type="button" class="btn btn-primary btn-floating" data-mdb-ripple-init
+       style="align-content: center; align-self: start; margin: 5vh; height: 10vh; width: 10vh">
+        <i class="fas fa-6x fa-angle-left"></i>
+    </a>
+</div>
+<section id="parasite" style="margin-top: 10vh">
+    <div class="section-div">
+        <h1>Parasite</h1>
+        <div>
+            <h4>Mon premier projet de jeu "serieux et fini"</h4>
+        </div>
+        <div>
+            <a href="https://gamejolt.com/games/Parasite/612309" target="_blank" class="btn btn-primary"
+               style="margin-bottom: 2vh">Jouer</a>
+        </div>
+
+        <!-- Carousel wrapper -->
+        <div id="carouselParasite" class="carousel slide carousel-fade " data-mdb-ride="carousel"
+             data-mdb-carousel-init data-mdb-ripple-init>
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button
+                        type="button"
+                        data-mdb-target="#carouselParasite"
+                        data-mdb-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                ></button>
+                <button
+                        type="button"
+                        data-mdb-target="#carouselParasite"
+                        data-mdb-slide-to="1"
+                        aria-label="Slide 2"
+                ></button>
+                <button
+                        type="button"
+                        data-mdb-target="#carouselParasite"
+                        data-mdb-slide-to="2"
+                        aria-label="Slide 3"
+                ></button>
+            </div>
+
+            <!-- Inner -->
+            <div class="carousel-inner">
+                <!-- Single item -->
+                <div class="carousel-item active">
+                    <img src="https://m.gjcdn.net/game-thumbnail/500/612309-cspweh2g-v4.webp"
+                         class="d-block w-100 carousel-img"
+                         alt="Sunset Over the City"/>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Parasite</h5>
+                        <p>Un projet développé en solo sur un coup de tête pour mieux prendre en main Unreal Engine.</p>
+                    </div>
+                </div>
+
+                <!-- Single item -->
+                <div class="carousel-item">
+                    <img src="https://i.gjcdn.net/public-data/games/9/59/612309/screenshots/parasite-19_05_2021-22_33_21-6nt8hhtm.png"
+                         class="d-block w-100 carousel-img"
+                         alt="Canyon at Nigh"/>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Quelques gameplay du jeu</h5>
+                        <p>Ici c'est la bibliothèque, il y a quelques objets à trouver mais surtout un monstre !</p>
+                    </div>
+                </div>
+
+                <!-- Single item -->
+                <div class="carousel-item">
+                    <img src="https://i.gjcdn.net/public-data/games/9/59/612309/screenshots/parasite-19_05_2021-22_32_13-yea5igkv.png"
+                         class="d-block w-100 carousel-img"
+                         alt="Cliff Above a Stormy Sea"/>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Une capture effrayante</h5>
+                        <p>Si vous le voyez, c'est qu'il est déjà trop tard ! Vraiment...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Inner -->
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselParasite"
+                    data-mdb-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-mdb-target="#carouselParasite"
+                    data-mdb-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Carousel wrapper -->
+
+        <div class="row-container-div" style="margin-top: 4vh">
+            <div>
+                <h4>Technologies</h4>
+                <ul>
+                    <li>Unreal Engine 4</li>
+                    <li>C++ / Blueprint</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Equipe</h4>
+                <ul>
+                    <li>Albéric Walsh</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Description</h4>
+                <p>
+                    Vous êtes dans un manoir abandonné et le parasite vous empêche de sortir. Pour pouvoir vous
+                    échapper, vous devez collecter des ours en bois afin d'apaiser le parasite. Oh, et une dernière
+                    chose : le parasite est dangereux, vraiment dangereux. Vous ne devez surtout pas le laisser vous
+                    voir...
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="separator"></div>
+
+<section id="Azure" style="margin-top: 10vh">
+    <div class="section-div">
+        <h1>Azure Flight</h1>
+        <div>
+            <h4>Un projet d'école où j'ai peut être dépenser un peu trop d'énergie</h4>
+        </div>
+        <div>
+            <a href="https://albericwalsh.itch.io/azure-flight" target="_blank" class="btn btn-primary"
+               style="margin-bottom: 2vh">Jouer</a>
+        </div>
+
+        <!-- Carousel wrapper -->
+        <div id="carouselAzure" class="carousel slide carousel-fade " data-mdb-ride="carousel"
+             data-mdb-carousel-init data-mdb-ripple-init>
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button
+                        type="button"
+                        data-mdb-target="#carouselAzure"
+                        data-mdb-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                ></button>
+                <button
+                        type="button"
+                        data-mdb-target="#carouselAzure"
+                        data-mdb-slide-to="1"
+                        aria-label="Slide 2"
+                ></button>
+                <button
+                        type="button"
+                        data-mdb-target="#carouselAzure"
+                        data-mdb-slide-to="2"
+                        aria-label="Slide 3"
+                ></button>
+            </div>
+
+            <!-- Inner -->
+            <div class="carousel-inner">
+                <!-- Single item -->
+                <div class="carousel-item active">
+                    <img src="https://img.itch.zone/aW1hZ2UvMjcxMTQwNy8xNjE2NTc4NC5qcGc=/original/TlxU79.jpg"
+                         class="d-block w-100 carousel-img"
+                         alt="Sunset Over the City"/>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: #0c1728">Azure Flight</h5>
+                        <p style="color: #0c1728">C'est un projet développé à deux passionés. Le but est aussi simple
+                            que juste voler...</p>
+                    </div>
+                </div>
+
+                <!-- Single item -->
+                <div class="carousel-item">
+                    <img src="https://img.itch.zone/aW1hZ2UvMjcxMTQwNy8xNjE2NTc4MC5qcGc=/original/7gTa1b.jpg"
+                         class="d-block w-100 carousel-img"
+                         alt="Canyon at Nigh"/>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: #0c1728">La vue du ciel</h5>
+                        <p style="color: #0c1728">On survole l'Ile principal, mais il y en a d'autre au long de l'histoire et pour les voir il suffit d'y jouer...</p>
+                    </div>
+                </div>
+
+                <!-- Single item -->
+                <div class="carousel-item">
+                    <img src="https://img.itch.zone/aW1hZ2UvMjcxMTQwNy8xNjE2NTc4My5qcGc=/original/7bMMz3.jpg"
+                         class="d-block w-100 carousel-img"
+                         alt="Cliff Above a Stormy Sea"/>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: #0c1728">Et un port</h5>
+                        <p style="color: #0c1728">Peut être pas aussi calme qu'on pourrait l'imaginer, il suffit d'ailleur de voir l'ambiance qu'il y plane.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Inner -->
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselAzure"
+                    data-mdb-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-mdb-target="#carouselAzure"
+                    data-mdb-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Carousel wrapper -->
+
+        <div class="row-container-div" style="margin-top: 4vh">
+            <div>
+                <h4>Technologies</h4>
+                <ul>
+                    <li>Unity</li>
+                    <li>C#</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Equipe</h4>
+                <ul>
+                    <li>Albéric Walsh</li>
+                </ul>
+                <ul>
+                    <li>Mathis Paillard</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Description</h4>
+                <p>Plongez dans une quête épique à travers des îles mystérieuses, guidée par un petit oiseau bleu nommé
+                    Azure. Abandonné et désespéré, il découvre des secrets sur ses origines qui le mènent à des
+                    aventures périlleuses et des révélations bouleversantes. Entre rencontres inattendues, dangers
+                    constants, et découvertes émouvantes, suivez Azure dans un voyage où chaque pas pourrait changer son
+                    destin à jamais. Un récit captivant d'espoir, de courage et de mystère vous attend. Serez-vous prêt
+                    à découvrir ce que cache la plume des Blue Birds?
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="separator"></div>
+
+<h1 style="text-align: center; margin-top: 10vh; margin-bottom: 50vh">D'autres projets à venir...</h1>
+<div class="separator" style="background-color: #00000000"></div>
 </body>
 </html>

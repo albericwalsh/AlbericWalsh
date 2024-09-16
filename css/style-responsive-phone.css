@@ -1,0 +1,249 @@
+/* Import de la font personnalisée */
+@font-face {
+    font-family: 'Ethereal-Thin';
+    src: url('../Font/Ethereal-Thin.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*for the phones*/
+@media only screen and (max-aspect-ratio: 1/1) {
+    html, body {
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        overflow: visible;
+        font-family: 'Montserrat Alternates', sans-serif;
+        scroll-behavior: smooth; /* Pour un défilement fluide */
+        overflow-x: clip; /* Empêche le défilement horizontal */
+    }
+
+    #background {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1; /* S'assure que l'image reste en arrière-plan */
+    }
+
+    .gradient-light {
+        background-size: cover;
+        background: linear-gradient(217deg, rgb(137, 176, 197), rgba(113, 173, 175, 0) 70.71%),
+        linear-gradient(127deg, rgb(54, 94, 122), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgb(56, 56, 84), rgba(0, 0, 255, 0) 70.71%),
+        no-repeat center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* S'assure que l'image reste en arrière-plan */
+        animation: gradient 15s infinite;
+    }
+
+    .gradient-dark {
+        background-size: cover;
+        background: linear-gradient(217deg, rgb(3, 96, 88), rgba(113, 173, 175, 0) 70.71%),
+        linear-gradient(127deg, rgb(4, 16, 24), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgb(4, 10, 12), rgba(0, 0, 255, 0) 70.71%),
+        no-repeat center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* S'assure que l'image reste en arrière-plan */
+        animation: gradient 1s infinite;
+    }
+
+    .gradient-night {
+        background-size: cover;
+        background: linear-gradient(217deg, rgb(30, 147, 0), rgba(113, 173, 175, 0) 70.71%),
+        linear-gradient(127deg, rgb(0, 9, 26), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgb(0, 0, 0), rgba(0, 0, 255, 0) 70.71%),
+        no-repeat center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* S'assure que l'image reste en arrière-plan */
+        animation: gradient 1s infinite;
+    }
+
+    /* Définition de l'animation */
+    @keyframes gradient {
+        0% {
+            background-position: 0 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0 50%;
+        }
+    }
+
+    .row-container-div {
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .text-div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: match-parent;
+        gap: 2vw;
+        width: 100vw; /* Chaque section occupe 100% de la largeur de l'écran */
+        height: 100vh; /* Chaque section occupe 100% de la hauteur de l'écran */
+    }
+
+    .article-txt {
+        display: flex;
+        flex-direction: column;
+        font-size: 2vh;
+        font-weight: 100;
+        color: #dcd4d4;
+        text-align: justify-all;
+        margin: 5vh 15vw;
+        padding: 2vh;
+        gap: 2vh;
+    }
+
+    section {
+        height: 100vh; /* Chaque section occupe 100% de la hauteur de l'écran */
+        width: 100vw; /* Chaque section occupe 100% de la largeur de l'écran */
+        padding: 5vh;
+        box-sizing: border-box; /* Inclut le padding dans la taille de la section */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10vh;
+        scroll-snap-align: start; /* Aligne chaque section au début du conteneur de défilement */
+        scroll-snap-type: y mandatory; /* Assure que le défilement est par sections */
+    }
+
+    .section-div {
+        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        align-content: center;
+        justify-content: start;
+    }
+
+    h1 {
+        font-size: 8vh;
+        font-weight: 300;
+        color: #ffffff;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    h2 {
+        font-size: 6vh;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-size: 4vh;
+        font-weight: 100;
+        color: #fff;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 3vh;
+        font-weight: 100;
+        color: #dcd4d4;
+        text-align: center;
+    }
+
+    h5 {
+        font-size: 3vh;
+        font-style: italic;
+        font-weight: 100;
+        color: #b6b2b2;
+        text-align: center;
+    }
+
+    p {
+        font-size: 2vh;
+        font-weight: 100;
+        color: #dcd4d4;
+        text-align: center;
+    }
+
+    .card {
+        height: 70vh;
+    }
+
+    .thumbnail {
+        height: 30vh;
+        object-fit: cover;
+    }
+
+    .img-illustration {
+        height: 50vh;
+        align-self: center;
+        justify-self: start;
+    }
+
+    .profile-pic {
+        /*position: absolute;*/
+        width: 100%; /* Largeur de l'image */
+        align-self: center;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .btn-floating {
+        position: absolute;
+        left: 40vw;
+        bottom: 5vh;
+        align-self: center;
+        justify-self: center;
+        align-content: center;
+        justify-content: center;
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .btn-custom {
+        padding: 10px 15px;
+        font-size: 10vw;
+        height: fit-content;
+        width: 100%;
+    }
+
+    .btn-custom-round {
+        padding: 10px 15px;
+        font-size: 4vw;
+        height: 64px;
+        width: 64px;
+    }
+
+
+}

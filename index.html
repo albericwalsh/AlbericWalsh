@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-responsive-phone.css">
     <link rel="stylesheet" type="text/css" href="css/animations.css">
     <!--    scripts-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
@@ -16,6 +17,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/animations.js"></script>
+    <script src="js/responsive.js"></script>
 </head>
 <body>
 <!-- background -->
@@ -31,7 +33,7 @@
     <a href="#articles" class="btn btn-primary btn-rounded menu-btn">ARTICLES</a>
 </div>
 <section id="top">
-    <div class="section-div" style="margin-top: 30vh">
+    <div class="section-div">
         <div data-animated-onScroll data-animated-onLoad class="profile-pic zoom-in">
             <img src="res/profile.jpg" class="img-fluid hover-shadow" alt="icon">
         </div>
@@ -55,7 +57,7 @@
             </h4>
             <a href="Files/CV.pdf" download="CV.pdf" type="button" class="btn btn-primary btn-floating"
                style="margin-left: 1vw" data-mdb-ripple-init>
-                <i class="fas fa-download"></i>
+                <i id="download_icon" class="fas fa-download"></i>
             </a>
         </div>
     </div>
@@ -63,13 +65,13 @@
 <section id="apropos">
     <div class="section-div" style="gap: 5vh">
         <a href="parcours.html" type="button" class="btn btn-custom btn-transparent slide-in-right"
-           style="align-content: center; width: 50%" data-animated-onScroll
+           style="align-content: center" data-animated-onScroll
            data-animated-onLoad data-mdb-ripple-init>Parcours</a>
         <a href="passions.html" type="button" class="btn btn-custom btn-transparent slide-in-right"
-           style="align-content: center; width: 50%" data-animated-onScroll
+           style="align-content: center" data-animated-onScroll
            data-animated-onLoad data-mdb-ripple-init>Passions</a>
         <a href="projets.html" type="button" class="btn btn-custom btn-transparent slide-in-right"
-           style="align-content: center; width: 50%" data-animated-onScroll
+           style="align-content: center" data-animated-onScroll
            data-animated-onLoad data-mdb-ripple-init>Projets</a>
     </div>
 </section>
@@ -267,13 +269,13 @@
         </div>
     </div>
 </section>
-
 <script src="js/active.js"></script>
 <script>
     // Initialization for ES Users
     import {Ripple, initMDB} from "mdb-ui-kit";
 
-    initMDB({Ripple});</script>
+    initMDB({Ripple});
+</script>
 </body>
 
 </html>
